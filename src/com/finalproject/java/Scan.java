@@ -1,5 +1,5 @@
 package com.finalproject.java;
-
+/*
 import java.util.Scanner;
 
 public class Scan {

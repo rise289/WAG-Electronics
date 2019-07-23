@@ -8,11 +8,11 @@ public class LargeGadget extends AbstractGadget {
     } //end method
 
     public LargeGadget(WidgetInterface widget) {
-        this(widget, GadgetColor.ORANGE);
+        this(widget, GadgetColor.color);
     } //end method
 
     @Override
     public float getPrice(){
-        return 850.00f;
+        return 82.97f;
     } //end method
 } //end class

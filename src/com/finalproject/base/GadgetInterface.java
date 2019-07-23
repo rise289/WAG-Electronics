@@ -9,7 +9,7 @@ public interface GadgetInterface {
     float getPrice();
     void paint(GadgetColor color);
 
-   /* void typeSwitch();
+    void typeSwitch();
     void typeButton();
-    void typeLight();*/
+    void typeLight();
 }

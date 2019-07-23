@@ -1,13 +1,14 @@
 package singleton;
 
-public class SerialNumberGenerator {
-    public class SerialNumber {
+import com.finalproject.ProductType;
 
-        private static SerialNumber instance;
+public class SerialNumber {
+
+        private SerialNumber instance;
         private String serialPrefix;
         private int count;
 
-        public synchronized static SerialNumber getInstance() {
+        public synchronized SerialNumber getInstance() {
             if (instance == null) {
                 instance = new SerialNumber();
             }

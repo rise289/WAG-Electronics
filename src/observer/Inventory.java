@@ -5,10 +5,6 @@ import java.util.Observable;
 public class Inventory {
 }
 
-package com.designpatterns.observer;
-
-        import java.util.Observable;
-
 public class Speedometer extends Observable {
     private int currentSpeed;
 

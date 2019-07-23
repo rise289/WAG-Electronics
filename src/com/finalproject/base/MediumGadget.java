@@ -8,12 +8,12 @@ public class MediumGadget extends AbstractGadget{
     } //end method
 
     public MediumGadget(WidgetInterface widget) {
-        this(widget, GadgetColor.ORANGE);
+        this(widget, GadgetColor.PLAIN);
     } //end method
 
     @Override
     public float getPrice(){
-        return 850.00f;
+        return 62.97f;
     } //end method
 } //end class
 

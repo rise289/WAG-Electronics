@@ -31,7 +31,7 @@ public abstract class AbstractGadget implements GadgetInterface{
 
         @Override
         public float getPrice(){
-            return 900.00f;
+            return 82.97f;
         }
 
         /*@Override
