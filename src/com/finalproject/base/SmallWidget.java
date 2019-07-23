@@ -1,10 +1,10 @@
-/*package com.finalproject.base;
+package com.finalproject.base;
 
 public class SmallWidget {
 
-    public int size){
-        super(size, false);
+    public string package){
+        super(package, false);
     }
 }
-*/
+
 

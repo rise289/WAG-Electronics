@@ -1,34 +1,31 @@
-/*package com.finalproject.base;
+package com.finalproject.base;
 
 public abstract class AbstractGadget implements GadgetInterface{
 
-  import com.designpatterns.java.BikeColor;
+        private WidgetInterface widget;
+        private GadgetColor color;
 
-    public abstract class AbstractBike implements BikeInterface{
-        private WheelInterface wheel;
-        private BikeColor color;
-
-        protected AbstractBike(WheelInterface wheel, BikeColor color){
-            this.wheel = wheel;
+        protected AbstractGadget(WidgetInterface widget, GadgetColor color){
+            this.widget = widget;
             this.color = color;
         }
 
-        protected AbstractBike (WheelInterface wheel){
-            this(wheel,BikeColor.UNPAINTED);
+        protected AbstractGadget (WidgeInterface widget){
+            this(widget,GadgetColor.UNPAINTED);
         }
 
         @Override
-        public WheelInterface getWheel() {
-            return wheel;
+        public WidgeInterface getWidget() {
+            return widget;
         }
 
         @Override
-        public BikeColor getColor() {
+        public GadgetColor getColor() {
             return color;
         }
 
         @Override
-        public void paint(BikeColor color) {
+        public void paint(GadgetColor color) {
             this.color=color;
         }
 
@@ -37,7 +34,7 @@ public abstract class AbstractGadget implements GadgetInterface{
             return 900.00f;
         }
 
-        @Override
+        /*@Override
         public void cleanFrame() {
             System.out.println("Cleaning Frame......");
         }
@@ -55,12 +52,12 @@ public abstract class AbstractGadget implements GadgetInterface{
         @Override
         public String toString() {
             return getClass().getSimpleName() +
-                    " ("+wheel+", "+color+", price = $"+getPrice()+")";
-        }
+                    " ("+widget+", "+color+", price = $"+getPrice()+")";
+        }*/
     } // end class
 
 
-}*/
+
 
 
 

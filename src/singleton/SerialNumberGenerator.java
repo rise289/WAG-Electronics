@@ -8,16 +8,18 @@ public class SerialNumberGenerator {
         private int count;
 
         public synchronized static SerialNumber getInstance() {
-            if(instance == null) {
+            if (instance == null) {
                 instance = new SerialNumber();
             }
             return instance;
         }
-        private SerialNumber() {}
+
+        private SerialNumber() {
+        }
 
         public synchronized String getNextSerial(ProductType type) {
             int value;
-            switch(type) {
+            switch (type) {
                 case LargeGadget:
                     serialPrefix = "06LRG";
                     count = 3467;
@@ -48,5 +50,6 @@ public class SerialNumberGenerator {
                     count = 1346;
                     value = ++count;
                     return serialPrefix + value;
-                )
-                )
+            }
+        }
+    }

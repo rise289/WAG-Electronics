@@ -6,4 +6,3 @@ public class MediumWidget {
         super(type,true);
     }
 }
-}
