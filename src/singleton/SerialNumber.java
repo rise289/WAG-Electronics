@@ -4,11 +4,11 @@ import com.finalproject.ProductType;
 
 public class SerialNumber {
 
-        private SerialNumber instance;
+        private static SerialNumber instance;
         private String serialPrefix;
         private int count;
 
-        public synchronized SerialNumber getInstance() {
+        public synchronized static SerialNumber getInstance() {
             if (instance == null) {
                 instance = new SerialNumber();
             }
@@ -51,6 +51,8 @@ public class SerialNumber {
                     count = 1346;
                     value = ++count;
                     return serialPrefix + value;
+                default:
+                    return "No type specified";
             }
         }
     }

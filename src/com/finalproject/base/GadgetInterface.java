@@ -1,15 +1,22 @@
 package com.finalproject.base;
 
-import com.finalproject.java.GadgetColor;
+import com.finalproject.SurfaceColor;
+import singleton.SerialNumber;
+
+import java.util.List;
 
 public interface GadgetInterface {
+    public  List<WidgetInterface> getWidgets(SurfaceColor color);
 
-    WidgetInterface getWidget();
-    GadgetColor getColor();
-    float getPrice();
-    void paint(GadgetColor color);
+    public int getSwitches();
+    public int getButtons();
+    public int getLights();
+    public String getPowerSource();
+    public String getSerialNumber();
+    public float getPrice();
+    public SurfaceColor getColor();
 
-    void typeSwitch();
-    void typeButton();
-    void typeLight();
+
+
+
 }

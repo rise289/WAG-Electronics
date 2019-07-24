@@ -1,61 +1,35 @@
 package com.finalproject.base;
 
+import com.finalproject.SurfaceColor;
+
 public abstract class AbstractGadget implements GadgetInterface{
 
-        private WidgetInterface widget;
-        private GadgetColor color;
+    private SurfaceColor color;
+    protected String serialNumber;
 
-        protected AbstractGadget(WidgetInterface widget, GadgetColor color){
-            this.widget = widget;
-            this.color = color;
-        }
+    public AbstractGadget() {
+        this(SurfaceColor.PLAIN);
+    }
 
-        protected AbstractGadget (WidgeInterface widget){
-            this(widget,GadgetColor.UNPAINTED);
-        }
+    public AbstractGadget(SurfaceColor color) {
+        this.color = color;
+    }
 
-        @Override
-        public WidgeInterface getWidget() {
-            return widget;
-        }
+    public SurfaceColor getColor() {
+        return color;
+    }
+    @Override
+    public String getSerialNumber(){
+        return serialNumber;
+    }
 
-        @Override
-        public GadgetColor getColor() {
-            return color;
-        }
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " was added to the order ";
+    }
 
-        @Override
-        public void paint(GadgetColor color) {
-            this.color=color;
-        }
 
-        @Override
-        public float getPrice(){
-            return 82.97f;
-        }
-
-        /*@Override
-        public void cleanFrame() {
-            System.out.println("Cleaning Frame......");
-        }
-
-        @Override
-        public void airTires() {
-            System.out.println("Airing up Tires......");
-        }
-
-        @Override
-        public void testRide() {
-            System.out.println("Taking bike out for a test ride......");
-        }
-
-        @Override
-        public String toString() {
-            return getClass().getSimpleName() +
-                    " ("+widget+", "+color+", price = $"+getPrice()+")";
-        }*/
-    } // end class
-
+    }
 
 
 

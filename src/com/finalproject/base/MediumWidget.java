@@ -1,9 +1,28 @@
 package com.finalproject.base;
-/*
-public class MediumWidget {
 
-    public MediumWidget(String type){
-        super(type,true);
+
+import com.finalproject.ProductType;
+import com.finalproject.SurfaceColor;
+import singleton.SerialNumber;
+
+public class MediumWidget extends AbstractWidget{
+
+    public MediumWidget(SurfaceColor color) {super(color);
+        this.serialNumber = SerialNumber.getInstance()
+                .getNextSerial (ProductType.SmallWidget);
+    }
+    @Override
+    public String getGears() {
+        return "4 Gears ";
+    }
+
+    @Override
+    public String getSprings(){
+        return "5 Springs ";
+    }
+    @Override
+    public String getLevers(){
+
+        return " 3 Levers ";
     }
 }
-*/

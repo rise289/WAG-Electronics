@@ -1,6 +1,6 @@
 package com.finalproject;
 
-public enum SurfaceType {
+public enum SurfaceColor {
     PLAIN, PAINTED, PLATED
 
 }

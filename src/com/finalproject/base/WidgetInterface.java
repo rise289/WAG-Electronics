@@ -1,8 +1,10 @@
 package com.finalproject.base;
-/*
-public interface WidgetInterface extends VisitableInterface{
-    String package getPackage();
-    boolean isMedium();
 
+public interface WidgetInterface{
+    public String getGears();
+    public String getSprings();
+    public String getLevers();
+    public String getSerialNumber();
 }
-*/
+
+
