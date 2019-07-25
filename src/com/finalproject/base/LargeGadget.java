@@ -16,7 +16,7 @@ public class LargeGadget extends AbstractGadget {
     public LargeGadget(SurfaceColor color) {
         super(color);
         this.serialNumber = SerialNumber.getInstance()
-                .getNextSerial(ProductType.LargeGadget);
+                .getNextSerial(ProductType.LARGEGADGET);
     }
 
     @Override

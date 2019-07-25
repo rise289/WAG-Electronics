@@ -21,32 +21,32 @@ public class SerialNumber {
         public synchronized String getNextSerial(ProductType type) {
             int value;
             switch (type) {
-                case LargeGadget:
+                case LARGEGADGET:
                     serialPrefix = "06LRG";
                     count = 3467;
                     value = ++count;
                     return serialPrefix + value;
-                case MediumGadget:
+                case MEDIUMGADGET:
                     serialPrefix = "04MED";
                     count = 2356;
                     value = ++count;
                     return serialPrefix + value;
-                case SmallGadget:
+                case SMALLGADGET:
                     serialPrefix = "02SML";
                     count = 1245;
                     value = ++count;
                     return serialPrefix + value;
-                case LargeWidget:
+                case LARGEWIDGET:
                     serialPrefix = "66LRG";
                     count = 3568;
                     value = ++count;
                     return serialPrefix + value;
-                case MediumWidget:
+                case MEDIUMWIDGET:
                     serialPrefix = "44MED";
                     count = 2457;
                     value = ++count;
                     return serialPrefix + value;
-                case SmallWidget:
+                case SMALLWIDGET:
                     serialPrefix = "22SML";
                     count = 1346;
                     value = ++count;

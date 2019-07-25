@@ -1,6 +1,6 @@
 package com.finalproject;
 
 public enum ProductType {
-    LargeGadget, MediumGadget, SmallGadget,
-    LargeWidget, MediumWidget, SmallWidget
+    LARGEGADGET, MEDIUMGADGET, SMALLGADGET,
+    LARGEWIDGET, MEDIUMWIDGET, SMALLWIDGET
 }

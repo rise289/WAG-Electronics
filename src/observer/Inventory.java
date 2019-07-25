@@ -1,5 +1,5 @@
 package observer;
-
+/*
 import java.util.Observable;
 
 public class Inventory {
@@ -23,4 +23,6 @@ public class Speedometer extends Observable {
         notifyObservers();
     } //end method
 } //end class
+
+*/
 

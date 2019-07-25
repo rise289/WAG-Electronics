@@ -8,7 +8,7 @@ public class SmallWidget extends AbstractWidget{
 
     public SmallWidget(SurfaceColor color) {super(color);
         this.serialNumber = SerialNumber.getInstance()
-                .getNextSerial(ProductType.SmallWidget);
+                .getNextSerial(ProductType.SMALLWIDGET);
     }
     @Override
     public String getGears(){

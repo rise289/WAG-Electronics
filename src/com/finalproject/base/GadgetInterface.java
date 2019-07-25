@@ -1,7 +1,6 @@
 package com.finalproject.base;
 
 import com.finalproject.SurfaceColor;
-import singleton.SerialNumber;
 
 import java.util.List;
 

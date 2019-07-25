@@ -8,9 +8,9 @@ import singleton.SerialNumber;
 public class MediumWidget extends AbstractWidget{
 
     public MediumWidget(SurfaceColor color) {super(color);
-        this.serialNumber = SerialNumber.getInstance()
-                .getNextSerial (ProductType.SmallWidget);
-    }
+    this.serialNumber = SerialNumber.getInstance()
+            .getNextSerial (ProductType.MEDIUMWIDGET);
+}
     @Override
     public String getGears() {
         return "4 Gears ";

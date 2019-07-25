@@ -17,7 +17,7 @@ public class MediumGadget extends AbstractGadget{
     public MediumGadget(SurfaceColor color) {
         super(color);
         this.serialNumber = SerialNumber.getInstance()
-                .getNextSerial(ProductType.MediumGadget);
+                .getNextSerial(ProductType.MEDIUMGADGET);
     }
 
     @Override
